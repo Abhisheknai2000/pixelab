@@ -26,7 +26,8 @@ BUTTON1 = InlineKeyboardButton(text="𝘗𝘳𝘫𝘬𝘵:𝘚𝘪𝘥.", url="h
 BUTTON2 = InlineKeyboardButton(text="Contact Owner", url="https://aqxzaxbot.t.me")
 
 MONGODB_URI = os.environ["mongodb+srv://Skfilter:Skfilter@skfilter.kmk96t1.mongodb.net/?retryWrites=true&w=majority"]
-client = MongoClient(MONGODB_URI)
+client = MongoClient(mongodb+srv://Skfilter:Skfilter@skfilter.kmk96t1.mongodb.net/?retryWrites=true&w=majority
+)
 db = client['pixeldrain_bot']
 authorized_users_col = db['514177149']
 
