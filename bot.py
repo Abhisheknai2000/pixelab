@@ -10,12 +10,12 @@ dotenv.load_dotenv()
 
 Bot = Client(
     "Pixeldrain-Bot",
-    bot_token=os.environ["BOT_TOKEN"],
-    api_id=int(os.environ["API_ID"]),
-    api_hash=os.environ["API_HASH"]
+    bot_token=os.environ["7535633647:AAGQbBaw4ndDVcAvglQg0xOCdwp2PJkpksQ"],
+    api_id=int(os.environ["16770898"]),
+    api_hash=os.environ["0fc19aa428dcceaaad4c502daf8df3ba"]
 )
 
-PIXELDRAIN_API_KEY = os.environ["PIXELDRAIN_API_KEY"]
+PIXELDRAIN_API_KEY = os.environ["073a5020-6292-47b0-9066-4cb7eba5ea39"]
 
 START_TEXT = """Hello {},
 Ready to share some media? Send a file to get a Pixeldrain stream link, or drop a Pixeldrain media ID or link to get the scoop on your file!"""
@@ -25,10 +25,10 @@ UNAUTH_TEXT = """Sorry, you are not authorized to use this bot. Please contact t
 BUTTON1 = InlineKeyboardButton(text="𝘗𝘳𝘫𝘬𝘵:𝘚𝘪𝘥.", url="https://burhanverse.t.me")
 BUTTON2 = InlineKeyboardButton(text="Contact Owner", url="https://aqxzaxbot.t.me")
 
-MONGODB_URI = os.environ["MONGODB_URI"]
+MONGODB_URI = os.environ["mongodb+srv://Skfilter:Skfilter@skfilter.kmk96t1.mongodb.net/?retryWrites=true&w=majority"]
 client = MongoClient(MONGODB_URI)
 db = client['pixeldrain_bot']
-authorized_users_col = db['authorized_users']
+authorized_users_col = db['514177149']
 
 # Function to check if the user is authorized
 def is_authorized(user_id):
